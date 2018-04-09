@@ -4,6 +4,8 @@ defmodule Libguru.Library do
   schema "libraries" do
     field :name, :string
 
+    has_many :dependencies, Dependency
+
     timestamps()
   end
 

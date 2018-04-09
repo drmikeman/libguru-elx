@@ -6,6 +6,8 @@ defmodule Libguru.Repository do
     field :name, :string
     field :url, :string
 
+    has_many :dependencies, Dependency
+
     timestamps()
   end
 
